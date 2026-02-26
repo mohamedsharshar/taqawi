@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Calendar, Mail, ChevronLeft } from 'lucide-react';
 import Card from '../components/Card';
 import Button from '../components/Button';
@@ -51,9 +51,9 @@ const NewsPage = () => (
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 group-hover:text-yellow-600 dark:group-hover:text-yellow-500 transition-colors leading-snug">
                 {news.title}
               </h3>
-              <a href="#" className="text-gray-600 dark:text-gray-400 text-sm hover:text-gray-900 dark:hover:text-white flex items-center gap-1">
+              <button className="text-gray-600 dark:text-gray-400 text-sm hover:text-gray-900 dark:hover:text-white flex items-center gap-1">
                 اقرأ المزيد <ChevronLeft className="w-4 h-4" />
-              </a>
+              </button>
             </div>
           </Card>
         ))}

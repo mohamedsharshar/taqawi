@@ -47,9 +47,9 @@ const ProjectsPage = () => (
                 {project.title}
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-3">{project.desc}</p>
-              <a href="#" className="text-yellow-600 dark:text-yellow-500 text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all">
+              <button className="text-yellow-600 dark:text-yellow-500 text-sm font-medium flex items-center gap-1 hover:gap-2 transition-all">
                 التفاصيل <ChevronLeft className="w-4 h-4" />
-              </a>
+              </button>
             </div>
           </Card>
         ))}

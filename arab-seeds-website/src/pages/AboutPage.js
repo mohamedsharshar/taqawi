@@ -72,9 +72,9 @@ const AboutPage = () => (
                   تعمل الشركة وفقاً لأحكام القانون رقم 159 لسنة 1981 ولائحته التنفيذية كشركة مساهمة مصرية، 
                   ملتزمة بأعلى معايير الحوكمة والشفافية القانونية. تم قيدها بالسجل التجاري تحت رقم 223869.
                 </p>
-                <a href="#" className="text-yellow-600 dark:text-yellow-500 text-sm hover:underline flex items-center gap-1">
+                <button className="text-yellow-600 dark:text-yellow-500 text-sm hover:underline flex items-center gap-1">
                   تحميل السجل التجاري والمستندات <Download className="w-4 h-4" />
-                </a>
+                </button>
               </div>
             </div>
           </Card>

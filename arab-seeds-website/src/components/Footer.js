@@ -22,11 +22,11 @@ const Footer = () => (
         <div>
           <h3 className="text-gray-900 dark:text-white font-bold mb-6">روابط سريعة</h3>
           <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">عن الشركة</a></li>
-            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">المنتجات والخدمات</a></li>
-            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">المركز الإعلامي</a></li>
-            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">الوظائف</a></li>
-            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">علاقات المستثمرين</a></li>
+            <li><button className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">عن الشركة</button></li>
+            <li><button className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">المنتجات والخدمات</button></li>
+            <li><button className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">المركز الإعلامي</button></li>
+            <li><button className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">الوظائف</button></li>
+            <li><button className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">علاقات المستثمرين</button></li>
           </ul>
         </div>
 
@@ -71,19 +71,19 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
         <p>© 2024 التحالف العربي لإنتاج التقاوي. جميع الحقوق محفوظة.</p>
         <div className="flex gap-6">
-          <a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">سياسة الخصوصية</a>
-          <a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">الشروط والأحكام</a>
+          <button className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">سياسة الخصوصية</button>
+          <button className="hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors">الشروط والأحكام</button>
         </div>
         <div className="flex gap-4">
-          <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+          <button className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
             <Facebook className="w-4 h-4" />
-          </a>
-          <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+          </button>
+          <button className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
             <Twitter className="w-4 h-4" />
-          </a>
-          <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+          </button>
+          <button className="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
             <Linkedin className="w-4 h-4" />
-          </a>
+          </button>
         </div>
       </div>
     </div>

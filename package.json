@@ -1,0 +1,24 @@
+{
+  "name": "arab-seeds-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "التحالف العربي لإنتاج التقاوي - الموقع الرسمي",
+  "scripts": {
+    "install": "cd arab-seeds-website && npm install",
+    "start": "cd arab-seeds-website && npm start",
+    "build": "cd arab-seeds-website && npm run build",
+    "test": "cd arab-seeds-website && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/arab-seeds-website"
+  },
+  "keywords": [
+    "agriculture",
+    "seeds",
+    "egypt",
+    "arabic"
+  ],
+  "author": "Arab Alliance for Seeds Production",
+  "license": "UNLICENSED"
+}

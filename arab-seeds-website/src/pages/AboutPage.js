@@ -14,13 +14,13 @@ const timelineEvents = [
 const AboutPage = () => (
   <div className="space-y-20 pb-20 pt-10 bg-gradient-to-b from-amber-50 to-white dark:from-[#1c1813] dark:to-[#1c1813]">
     <section className="max-w-6xl mx-auto px-4">
-      <div className="h-64 bg-gradient-to-r from-yellow-100 to-amber-100 dark:from-[#2a2520] dark:to-[#2a2520] rounded-xl flex items-center justify-center relative overflow-hidden mb-12 shadow-lg">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 dark:to-black/40 z-10"></div>
+      <div className="h-64 bg-cover bg-center bg-no-repeat rounded-xl flex items-center justify-center relative overflow-hidden mb-12 shadow-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=1200)' }}>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
         <div className="z-20 text-center">
           <span className="bg-yellow-600 dark:bg-yellow-500 text-white dark:text-black px-3 py-1 text-xs font-bold rounded mb-4 inline-block">
             عن الشركة
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">مسيرة النمو والتطور</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white">مسيرة النمو والتطور</h1>
         </div>
       </div>
 

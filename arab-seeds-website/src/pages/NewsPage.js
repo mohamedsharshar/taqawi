@@ -20,18 +20,19 @@ const newsList = [
     title: 'إطلاق مبادرة "بذور المستقبل" لدعم المزارعين العرب', 
     date: '٠٥ أكتوبر ٢٠٢٥', 
     tag: 'مبادرة جديدة',
-    img: 'https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?auto=compress&cs=tinysrgb&w=800'
+    img: './images/img2.jpeg'
   },
 ];
 
 const NewsPage = () => (
   <div className="space-y-16 pb-20 pt-10 bg-gradient-to-b from-amber-50 to-white dark:from-[#1c1813] dark:to-[#1c1813]">
     <section className="max-w-6xl mx-auto px-4">
-      <div className="h-64 bg-gradient-to-r from-amber-100 to-yellow-100 dark:from-[#2a2520] dark:to-[#2a2520] border border-amber-200 dark:border-[#332e27] rounded-2xl flex items-center justify-center relative overflow-hidden mb-12 shadow-lg">
-        <div className="text-center z-10">
-          <span className="text-yellow-600 dark:text-yellow-500 text-sm font-medium mb-2 inline-block">المنصة الرسمية</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">المركز الإعلامي والأخبار الرسمية</h1>
-          <p className="text-gray-700 dark:text-gray-300">نوافيكم بآخر المستجدات والابتكارات في عالم البذور والزراعة المستدامة في العالم العربي.</p>
+      <div className="h-64 bg-cover bg-center bg-no-repeat rounded-2xl flex items-center justify-center relative overflow-hidden mb-12 shadow-lg" style={{ backgroundImage: 'url(/images/news.png)' }}>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="text-center z-10 px-4">
+          <span className="text-yellow-400 text-sm font-medium mb-2 inline-block">المنصة الرسمية</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">المركز الإعلامي والأخبار الرسمية</h1>
+          <p className="text-gray-100">نوافيكم بآخر المستجدات والابتكارات في عالم البذور والزراعة المستدامة في العالم العربي.</p>
         </div>
       </div>
 

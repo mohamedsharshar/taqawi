@@ -15,11 +15,16 @@ const boardMembers = [
 
 const ShareholdersPage = () => (
   <div className="space-y-16 pb-20 pt-10 bg-gradient-to-b from-amber-50 to-white dark:from-[#1c1813] dark:to-[#1c1813]">
-    <section className="max-w-6xl mx-auto px-4 text-center">
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">هيكل المساهمين ومجلس الإدارة الرسمي</h1>
-      <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-        البيانات المؤسسية وحوكمة التحالف العربي لإنتاج التقاوي. نلتزم بأعلى معايير الشفافية في إدارة استثماراتنا الزراعية.
-      </p>
+    <section className="max-w-6xl mx-auto px-4">
+      <div className="h-64 bg-cover bg-center bg-no-repeat rounded-xl flex items-center justify-center relative overflow-hidden mb-12 shadow-lg" style={{ backgroundImage: 'url(https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200)' }}>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="z-20 text-center px-4">
+          <h1 className="text-4xl font-bold text-white mb-4">هيكل المساهمين ومجلس الإدارة الرسمي</h1>
+          <p className="text-gray-100 max-w-2xl mx-auto">
+            البيانات المؤسسية وحوكمة التحالف العربي لإنتاج التقاوي. نلتزم بأعلى معايير الشفافية في إدارة استثماراتنا الزراعية.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8">

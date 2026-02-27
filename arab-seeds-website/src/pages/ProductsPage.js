@@ -5,14 +5,19 @@ import Card from '../components/Card';
 
 const ProductsPage = () => (
   <div className="space-y-20 pb-20 pt-10 bg-gradient-to-b from-amber-50 to-white dark:from-[#1c1813] dark:to-[#1c1813]">
-    <section className="max-w-6xl mx-auto px-4 text-center">
-      <span className="text-yellow-600 dark:text-yellow-500 text-sm font-medium">القسم الخاص</span>
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-2 mb-4">
-        منتجاتنا ومجالات <span className="text-yellow-600 dark:text-yellow-500">التميز</span>
-      </h1>
-      <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-        نقدم حلولاً زراعية متكاملة بأعلى معايير الجودة العالمية لتعزيز الأمن الغذائي وتطوير القطاع الزراعي في المنطقة العربية.
-      </p>
+    <section className="max-w-6xl mx-auto px-4">
+      <div className="h-64 bg-cover bg-center bg-no-repeat rounded-xl flex items-center justify-center relative overflow-hidden mb-12 shadow-lg" style={{ backgroundImage: 'url(/images/product_hero.jpg)' }}>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="z-20 text-center px-4">
+          <span className="text-yellow-400 text-sm font-medium">القسم الخاص</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mt-2 mb-4">
+            منتجاتنا ومجالات <span className="text-yellow-400">التميز</span>
+          </h1>
+          <p className="text-gray-100 max-w-2xl mx-auto">
+            نقدم حلولاً زراعية متكاملة بأعلى معايير الجودة العالمية لتعزيز الأمن الغذائي وتطوير القطاع الزراعي في المنطقة العربية.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section className="max-w-6xl mx-auto px-4">

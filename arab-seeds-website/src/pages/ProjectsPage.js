@@ -43,9 +43,14 @@ const projectsList = [
 
 const ProjectsPage = () => (
   <div className="space-y-12 pb-20 pt-10 bg-gradient-to-b from-amber-50 to-white dark:from-[#1c1813] dark:to-[#1c1813]">
-    <section className="max-w-6xl mx-auto px-4 text-center">
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">المشروعات</h1>
-      <p className="text-gray-600 dark:text-gray-400">مشاريعنا الاستراتيجية لتعزيز الأمن الغذائي</p>
+    <section className="max-w-6xl mx-auto px-4">
+      <div className="h-64 bg-cover bg-center bg-no-repeat rounded-xl flex items-center justify-center relative overflow-hidden mb-12 shadow-lg" style={{ backgroundImage: 'url(/images/projects_hero.jpg)' }}>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="z-20 text-center px-4">
+          <h1 className="text-4xl font-bold text-white mb-4">المشروعات</h1>
+          <p className="text-gray-100">مشاريعنا الاستراتيجية لتعزيز الأمن الغذائي</p>
+        </div>
+      </div>
     </section>
 
     <section className="max-w-6xl mx-auto px-4">

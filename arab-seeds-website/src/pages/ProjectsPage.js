@@ -13,7 +13,7 @@ const projectsList = [
     title: 'مشروع استصلاح الأراضي الصحراوية', 
     desc: 'تحويل الصحراء إلى رقعة خضراء منتجة باستخدام أحدث التقنيات.', 
     status: 'قيد التخطيط',
-    img: 'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=800'
+    img: './images/desert2png.png'
   },
   { 
     title: 'مشروع الصوبات الزراعية الحديثة', 

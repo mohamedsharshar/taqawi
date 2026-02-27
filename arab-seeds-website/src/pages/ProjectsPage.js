@@ -25,7 +25,7 @@ const projectsList = [
     title: 'مشروع الزراعة العمودية', 
     desc: 'حلول زراعية مبتكرة للمناطق الحضرية المكتظة بالسكان.', 
     status: 'مستقبلي',
-    img: 'https://images.pexels.com/photos/6231818/pexels-photo-6231818.jpeg?auto=compress&cs=tinysrgb&w=800'
+    img: './images/agr.jpg'
   },
   { 
     title: 'مجمع إنتاج التقاوي المحسنة', 

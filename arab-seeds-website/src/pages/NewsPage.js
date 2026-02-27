@@ -4,9 +4,24 @@ import Card from '../components/Card';
 import Button from '../components/Button';
 
 const newsList = [
-  { title: 'نتائج الربع السنوي: أرقام قياسية في محاصيل الحبوب', date: '٢٠ أكتوبر ٢٠٢٥', tag: 'إنجازات' },
-  { title: 'توقيع اتفاقية تعاون دولي لتطوير تقنيات إنتاج القمح', date: '١٥ أكتوبر ٢٠٢٥', tag: 'شراكة دولية' },
-  { title: 'إطلاق مبادرة "بذور المستقبل" لدعم المزارعين العرب', date: '٠٥ أكتوبر ٢٠٢٥', tag: 'مبادرة جديدة' },
+  { 
+    title: 'نتائج الربع السنوي: أرقام قياسية في محاصيل الحبوب', 
+    date: '٢٠ أكتوبر ٢٠٢٥', 
+    tag: 'إنجازات',
+    img: 'https://images.pexels.com/photos/265216/pexels-photo-265216.jpeg?auto=compress&cs=tinysrgb&w=800'
+  },
+  { 
+    title: 'توقيع اتفاقية تعاون دولي لتطوير تقنيات إنتاج القمح', 
+    date: '١٥ أكتوبر ٢٠٢٥', 
+    tag: 'شراكة دولية',
+    img: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&auto=format&fit=crop'
+  },
+  { 
+    title: 'إطلاق مبادرة "بذور المستقبل" لدعم المزارعين العرب', 
+    date: '٠٥ أكتوبر ٢٠٢٥', 
+    tag: 'مبادرة جديدة',
+    img: 'https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?auto=compress&cs=tinysrgb&w=800'
+  },
 ];
 
 const NewsPage = () => (
@@ -38,8 +53,12 @@ const NewsPage = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {newsList.map((news, idx) => (
           <Card key={idx} className="p-0 overflow-hidden group hover:border-yellow-600 dark:hover:border-yellow-500/50">
-            <div className="h-48 bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-[#1a1611] dark:to-[#1a1611] relative flex items-center justify-center text-gray-500 dark:text-gray-600">
-              [صورة خبر]
+            <div className="h-48 bg-gradient-to-br from-amber-100 to-yellow-100 dark:from-[#1a1611] dark:to-[#1a1611] relative">
+              <img 
+                src={news.img} 
+                alt={news.title} 
+                className="w-full h-full object-cover"
+              />
               <span className="absolute top-4 right-4 bg-white/90 dark:bg-[#1c1813]/80 text-gray-900 dark:text-white text-xs px-2 py-1 rounded backdrop-blur-sm shadow-sm">
                 {news.tag}
               </span>

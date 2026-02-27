@@ -39,10 +39,12 @@ const ProductsPage = () => (
           </ul>
           <Button className="w-fit">اطلب عرض سعر</Button>
         </div>
-        <div className="md:w-1/2 bg-amber-100 dark:bg-[#1a1611] flex items-center justify-center p-8">
-          <div className="w-64 h-64 bg-yellow-200 dark:bg-[#332e27] rounded-full flex items-center justify-center text-gray-600 dark:text-gray-500 border-4 border-yellow-300 dark:border-[#2a2520] shadow-2xl">
-            [صورة بطاطس]
-          </div>
+        <div className="md:w-1/2 bg-amber-100 dark:bg-[#1a1611]">
+          <img 
+            src="/images/potato2.jpg" 
+            alt="تقاوي البطاطس" 
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>
@@ -50,16 +52,24 @@ const ProductsPage = () => (
     <section className="max-w-6xl mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {[
-          { title: 'البذور والتقاوي الزراعية', desc: 'توفير مجموعة واسعة من بذور الخضروات والمحاصيل الحقلية بأعلى معدلات الإنبات.' },
-          { title: 'الأسمدة والمخصبات', desc: 'حلول تسميد متكاملة تشمل الأسمدة المركبة والمعدنية والمخصبات الحيوية.' },
-          { title: 'الحاصلات الزراعية', desc: 'تخزين وتصدير الحاصلات الزراعية الطازجة وفقاً للمواصفات العالمية.' },
-          { title: 'مستلزمات شبكات الري', desc: 'توريد كافة قطع الغيار والحلول ومستلزمات الشبكات لترشيد المياه.' },
-          { title: 'الإنتاج الحيواني والداجني', desc: 'توفير الأعلاف والإضافات الغذائية ومستلزمات المزارع لزيادة الإنتاج.' },
-          { title: 'الاستشارات الزراعية', desc: 'تقديم الدعم الفني والاستشارات المتخصصة للمزارعين والمستثمرين.' },
+          { title: 'البذور والتقاوي الزراعية', desc: 'توفير مجموعة واسعة من بذور الخضروات والمحاصيل الحقلية بأعلى معدلات الإنبات.', img: '/images/p1.png' },
+          { title: 'الأسمدة والمخصبات', desc: 'حلول تسميد متكاملة تشمل الأسمدة المركبة والمعدنية والمخصبات الحيوية.', img: '/images/p2.png' },
+          { title: 'الحاصلات الزراعية', desc: 'تخزين وتصدير الحاصلات الزراعية الطازجة وفقاً للمواصفات العالمية.', img: '/images/p3.jpg' },
+          { title: 'مستلزمات شبكات الري', desc: 'توريد كافة قطع الغيار والحلول ومستلزمات الشبكات لترشيد المياه.', img: './images/p4.jpg' },
+          { title: 'الإنتاج الحيواني والداجني', desc: 'توفير الأعلاف والإضافات الغذائية ومستلزمات المزارع لزيادة الإنتاج.', img: './images/p5.png' },
+          { title: 'الاستشارات الزراعية', desc: 'تقديم الدعم الفني والاستشارات المتخصصة للمزارعين والمستثمرين.', img: './images/p6.png' },
         ].map((item, idx) => (
           <Card key={idx} className="p-0 overflow-hidden flex flex-col group">
             <div className="h-40 bg-amber-100 dark:bg-[#1a1611] flex items-center justify-center text-gray-500 dark:text-gray-600 border-b border-gray-200 dark:border-[#332e27]">
-              [صورة منتج]
+              {item.img ? (
+                <img 
+                  src={item.img} 
+                  alt={item.title} 
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                '[صورة منتج]'
+              )}
             </div>
             <div className="p-5 flex flex-col flex-grow">
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{item.title}</h3>

@@ -40,13 +40,16 @@ const businessSectors = [
 const HomePage = ({ navigate }) => (
   <div className="space-y-20 pb-20 bg-gradient-to-b from-amber-50 to-white dark:from-[#1c1813] dark:to-[#1c1813]">
     {/* Hero Section */}
-    <section className="relative pt-32 pb-20 text-center px-4">
-      <div className="max-w-4xl mx-auto space-y-6">
-        <h3 className="text-yellow-600 dark:text-yellow-500 font-medium tracking-wide">التميز في الإنتاج الزراعي</h3>
-        <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white leading-tight">
+    <section className="relative pt-32 pb-20 text-center px-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/img1.jpeg)' }}>
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/50"></div>
+      
+      <div className="relative z-10 max-w-4xl mx-auto space-y-6">
+        <h3 className="text-yellow-400 font-medium tracking-wide">التميز في الإنتاج الزراعي</h3>
+        <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
           التحالف العربي لإنتاج التقاوي
         </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-100 max-w-2xl mx-auto">
           نعمل على تطوير الإنتاج الزراعي بأعلى المعايير العالمية وتقنيات إنتاج التقاوي المتطورة لدعم الأمن الغذائي المستدام.
         </p>
         <div className="flex justify-center gap-4 pt-6">

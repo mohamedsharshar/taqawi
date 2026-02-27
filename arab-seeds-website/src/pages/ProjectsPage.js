@@ -3,12 +3,42 @@ import { ChevronLeft } from 'lucide-react';
 import Card from '../components/Card';
 
 const projectsList = [
-  { title: 'تطوير نظم الري الذكي', desc: 'استخدام الذكاء الاصطناعي في ترشيد المياه وزيادة كفاءة الري.', status: 'تحت التنفيذ' },
-  { title: 'مشروع استصلاح الأراضي الصحراوية', desc: 'تحويل الصحراء إلى رقعة خضراء منتجة باستخدام أحدث التقنيات.', status: 'قيد التخطيط' },
-  { title: 'مشروع الصوبات الزراعية الحديثة', desc: 'زيادة الإنتاجية من خلال الزراعة المحمية والمتحكم بها.', status: 'تحت التنفيذ' },
-  { title: 'مشروع الزراعة العمودية', desc: 'حلول زراعية مبتكرة للمناطق الحضرية المكتظة بالسكان.', status: 'مستقبلي' },
-  { title: 'مجمع إنتاج التقاوي المحسنة', desc: 'إنتاج سلالات محلية عالية الجودة للمزارعين العرب.', status: 'تحت التنفيذ' },
-  { title: 'مشروع المراقبة بالدرون', desc: 'مراقبة المحاصيل وتحليل البيانات باستخدام الطائرات المسيرة.', status: 'تقني' },
+  { 
+    title: 'تطوير نظم الري الذكي', 
+    desc: 'استخدام الذكاء الاصطناعي في ترشيد المياه وزيادة كفاءة الري.', 
+    status: 'تحت التنفيذ',
+    img: 'https://images.pexels.com/photos/2132250/pexels-photo-2132250.jpeg?auto=compress&cs=tinysrgb&w=800'
+  },
+  { 
+    title: 'مشروع استصلاح الأراضي الصحراوية', 
+    desc: 'تحويل الصحراء إلى رقعة خضراء منتجة باستخدام أحدث التقنيات.', 
+    status: 'قيد التخطيط',
+    img: 'https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&w=800'
+  },
+  { 
+    title: 'مشروع الصوبات الزراعية الحديثة', 
+    desc: 'زيادة الإنتاجية من خلال الزراعة المحمية والمتحكم بها.', 
+    status: 'تحت التنفيذ',
+    img: './images/sob.jpg'
+  },
+  { 
+    title: 'مشروع الزراعة العمودية', 
+    desc: 'حلول زراعية مبتكرة للمناطق الحضرية المكتظة بالسكان.', 
+    status: 'مستقبلي',
+    img: 'https://images.pexels.com/photos/6231818/pexels-photo-6231818.jpeg?auto=compress&cs=tinysrgb&w=800'
+  },
+  { 
+    title: 'مجمع إنتاج التقاوي المحسنة', 
+    desc: 'إنتاج سلالات محلية عالية الجودة للمزارعين العرب.', 
+    status: 'تحت التنفيذ',
+    img: './images/taq.jpg'
+  },
+  { 
+    title: 'مشروع المراقبة بالدرون', 
+    desc: 'مراقبة المحاصيل وتحليل البيانات باستخدام الطائرات المسيرة.', 
+    status: 'تقني',
+    img: 'https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=800'
+  },
 ];
 
 const ProjectsPage = () => (
@@ -36,8 +66,12 @@ const ProjectsPage = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projectsList.map((project, idx) => (
           <Card key={idx} className="p-0 overflow-hidden group">
-            <div className="relative h-48 bg-amber-100 dark:bg-[#1a1611] flex items-center justify-center text-gray-500 dark:text-gray-600">
-              [صورة مشروع]
+            <div className="relative h-48 bg-amber-100 dark:bg-[#1a1611]">
+              <img 
+                src={project.img} 
+                alt={project.title} 
+                className="w-full h-full object-cover"
+              />
               <span className="absolute top-4 right-4 bg-yellow-600 dark:bg-yellow-500 text-white dark:text-black text-xs font-bold px-2 py-1 rounded shadow-lg">
                 {project.status}
               </span>

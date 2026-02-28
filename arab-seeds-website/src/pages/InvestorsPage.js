@@ -64,28 +64,111 @@ const InvestorsPage = () => {
                 <tr><td colSpan="3" className="p-4 text-yellow-600 dark:text-yellow-500 font-bold bg-amber-50 dark:bg-[#221e1a]">{t('investors.balance.currentAssets')}</td></tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
                   <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.inventory')}</td>
-                  <td className="p-4 text-gray-600 dark:text-gray-400">115,100,000</td>
-                  <td className="p-4 text-gray-600 dark:text-gray-400">140,250,000</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">42,138,073</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">42,928,587</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
                   <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.receivables')}</td>
-                  <td className="p-4 text-gray-600 dark:text-gray-400">85,400,000</td>
-                  <td className="p-4 text-gray-600 dark:text-gray-400">92,100,000</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">126,350,920</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">127,147,890</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.advancePayments')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">22,756,380</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">23,611,711</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
                   <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.cash')}</td>
-                  <td className="p-4 text-gray-600 dark:text-gray-400">12,500,000</td>
-                  <td className="p-4 text-gray-600 dark:text-gray-400">13,200,000</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">145,620,765</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">41,380,059</td>
                 </tr>
                 <tr className="font-bold bg-amber-50 dark:bg-[#221e1a]">
                   <td className="p-4 text-yellow-600 dark:text-yellow-500">{t('investors.balance.totalCurrent')}</td>
-                  <td className="p-4 text-gray-900 dark:text-white">213,000,000</td>
-                  <td className="p-4 text-gray-900 dark:text-white">245,550,000</td>
+                  <td className="p-4 text-gray-900 dark:text-white">336,866,138</td>
+                  <td className="p-4 text-gray-900 dark:text-white">235,068,247</td>
                 </tr>
                 <tr className="font-bold bg-yellow-100 dark:bg-yellow-500/10">
                   <td className="p-4 text-gray-900 dark:text-white text-lg">{t('investors.balance.totalAssets')}</td>
-                  <td className="p-4 text-gray-900 dark:text-white text-lg">655,410,726</td>
-                  <td className="p-4 text-gray-900 dark:text-white text-lg">779,778,238</td>
+                  <td className="p-4 text-gray-900 dark:text-white text-lg">779,276,864</td>
+                  <td className="p-4 text-gray-900 dark:text-white text-lg">769,296,485</td>
+                </tr>
+                <tr><td colSpan="3" className="p-4 text-yellow-600 dark:text-yellow-500 font-bold bg-amber-50 dark:bg-[#221e1a]">{t('investors.balance.currentLiabilities')}</td></tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.suppliersPayable')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">52,040,926</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">8,144,944</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.fixedAssetsCreditors')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">5,708,018</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">2,922,662</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.otherCreditors')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">2,740,646</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">359,618</td>
+                </tr>
+                <tr className="font-bold bg-amber-50 dark:bg-[#221e1a]">
+                  <td className="p-4 text-yellow-600 dark:text-yellow-500">{t('investors.balance.totalCurrentLiabilities')}</td>
+                  <td className="p-4 text-gray-900 dark:text-white">60,489,590</td>
+                  <td className="p-4 text-gray-900 dark:text-white">11,427,224</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.workingCapital')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">276,376,548</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">223,641,023</td>
+                </tr>
+                <tr className="font-bold bg-amber-50 dark:bg-[#221e1a]">
+                  <td className="p-4 text-yellow-600 dark:text-yellow-500">{t('investors.balance.totalInvestment')}</td>
+                  <td className="p-4 text-gray-900 dark:text-white">718,787,274</td>
+                  <td className="p-4 text-gray-900 dark:text-white">757,869,261</td>
+                </tr>
+                <tr><td colSpan="3" className="p-4 text-yellow-600 dark:text-yellow-500 font-bold bg-amber-50 dark:bg-[#221e1a]">{t('investors.balance.equity')}</td></tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.issuedCapital')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">236,500,000</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">350,500,000</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.capitalIncrease')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">101,500,000</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">-</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.netProfitPeriod')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">7,173,983</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">9,220,166</td>
+                </tr>
+                <tr className="font-bold bg-amber-50 dark:bg-[#221e1a]">
+                  <td className="p-4 text-yellow-600 dark:text-yellow-500">{t('investors.balance.totalEquity')}</td>
+                  <td className="p-4 text-gray-900 dark:text-white">345,173,983</td>
+                  <td className="p-4 text-gray-900 dark:text-white">359,720,166</td>
+                </tr>
+                <tr><td colSpan="3" className="p-4 text-yellow-600 dark:text-yellow-500 font-bold bg-amber-50 dark:bg-[#221e1a]">{t('investors.balance.nonCurrentLiabilities')}</td></tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.leaseLiabilities')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">373,438,100</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">397,912,530</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.balance.deferredTaxLiabilities')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">175,191</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">236,565</td>
+                </tr>
+                <tr className="font-bold bg-amber-50 dark:bg-[#221e1a]">
+                  <td className="p-4 text-yellow-600 dark:text-yellow-500">{t('investors.balance.totalNonCurrentLiabilities')}</td>
+                  <td className="p-4 text-gray-900 dark:text-white">373,613,291</td>
+                  <td className="p-4 text-gray-900 dark:text-white">398,149,095</td>
+                </tr>
+                <tr className="font-bold bg-amber-50 dark:bg-[#221e1a]">
+                  <td className="p-4 text-yellow-600 dark:text-yellow-500">{t('investors.balance.totalLiabilities')}</td>
+                  <td className="p-4 text-gray-900 dark:text-white">434,102,881</td>
+                  <td className="p-4 text-gray-900 dark:text-white">409,576,319</td>
+                </tr>
+                <tr className="font-bold bg-yellow-100 dark:bg-yellow-500/10">
+                  <td className="p-4 text-gray-900 dark:text-white text-lg">{t('investors.balance.totalEquityAndLiabilities')}</td>
+                  <td className="p-4 text-gray-900 dark:text-white text-lg">779,276,864</td>
+                  <td className="p-4 text-gray-900 dark:text-white text-lg">769,296,485</td>
                 </tr>
               </tbody>
             </table>

@@ -75,9 +75,39 @@ const ShareholdersPage = () => {
                 <td className="p-4 text-yellow-600 dark:text-yellow-500 text-center font-bold">11.19%</td>
               </tr>
               <tr className="hover:bg-gray-50 dark:hover:bg-[#2a2520]/50">
-                <td className="p-4 text-gray-900 dark:text-white">{t('shareholders.companies.others')}</td>
-                <td className="p-4 text-gray-600 dark:text-gray-400 text-center">74,172,500</td>
-                <td className="p-4 text-yellow-600 dark:text-yellow-500 text-center font-bold">12.10%</td>
+                <td className="p-4 text-gray-900 dark:text-white">{t('shareholders.companies.egyptianAgri')}</td>
+                <td className="p-4 text-gray-600 dark:text-gray-400 text-center">30,000,000</td>
+                <td className="p-4 text-yellow-600 dark:text-yellow-500 text-center font-bold">4.90%</td>
+              </tr>
+              <tr className="hover:bg-gray-50 dark:hover:bg-[#2a2520]/50">
+                <td className="p-4 text-gray-900 dark:text-white">{t('shareholders.companies.cropos')}</td>
+                <td className="p-4 text-gray-600 dark:text-gray-400 text-center">13,500,000</td>
+                <td className="p-4 text-yellow-600 dark:text-yellow-500 text-center font-bold">2.20%</td>
+              </tr>
+              <tr className="hover:bg-gray-50 dark:hover:bg-[#2a2520]/50">
+                <td className="p-4 text-gray-900 dark:text-white">{t('shareholders.companies.research')}</td>
+                <td className="p-4 text-gray-600 dark:text-gray-400 text-center">9,000,000</td>
+                <td className="p-4 text-yellow-600 dark:text-yellow-500 text-center font-bold">1.47%</td>
+              </tr>
+              <tr className="hover:bg-gray-50 dark:hover:bg-[#2a2520]/50">
+                <td className="p-4 text-gray-900 dark:text-white">{t('shareholders.companies.egyptianAgriSeeds')}</td>
+                <td className="p-4 text-gray-600 dark:text-gray-400 text-center">11,000,000</td>
+                <td className="p-4 text-yellow-600 dark:text-yellow-500 text-center font-bold">1.80%</td>
+              </tr>
+              <tr className="hover:bg-gray-50 dark:hover:bg-[#2a2520]/50">
+                <td className="p-4 text-gray-900 dark:text-white">{t('shareholders.companies.international2')}</td>
+                <td className="p-4 text-gray-600 dark:text-gray-400 text-center">7,672,500</td>
+                <td className="p-4 text-yellow-600 dark:text-yellow-500 text-center font-bold">1.25%</td>
+              </tr>
+              <tr className="hover:bg-gray-50 dark:hover:bg-[#2a2520]/50">
+                <td className="p-4 text-gray-900 dark:text-white">{t('shareholders.companies.union')}</td>
+                <td className="p-4 text-gray-600 dark:text-gray-400 text-center">2,000,000</td>
+                <td className="p-4 text-yellow-600 dark:text-yellow-500 text-center font-bold">0.33%</td>
+              </tr>
+              <tr className="hover:bg-gray-50 dark:hover:bg-[#2a2520]/50">
+                <td className="p-4 text-gray-900 dark:text-white">{t('shareholders.companies.cooperative')}</td>
+                <td className="p-4 text-gray-600 dark:text-gray-400 text-center">1,000,000</td>
+                <td className="p-4 text-yellow-600 dark:text-yellow-500 text-center font-bold">0.16%</td>
               </tr>
               <tr className="bg-yellow-100 dark:bg-[#2a2520] font-bold">
                 <td className="p-4 text-gray-900 dark:text-white">{t('shareholders.table.total')}</td>

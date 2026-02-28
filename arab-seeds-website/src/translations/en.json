@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "projects": "Projects",
+    "news": "News",
+    "investors": "Investor Relations",
+    "shareholders": "Shareholders",
+    "contact": "Contact Us"
+  },
+  "header": {
+    "login": "Login",
+    "companyName": "Arab Alliance",
+    "companySubtitle": "for Seed Production"
+  },
+  "home": {
+    "hero": {
+      "tag": "Excellence in Agricultural Production",
+      "title": "Arab Alliance for Seed Production",
+      "description": "We work to develop agricultural production with the highest international standards and advanced seed production technologies to support sustainable food security.",
+      "cta1": "About Us",
+      "cta2": "Investor Relations"
+    },
+    "info": {
+      "foundingYear": "Founding Year",
+      "foundingYearValue": "2024",
+      "legalForm": "Legal Form",
+      "legalFormValue": "Joint Stock Company"
+    },
+    "sectors": {
+      "title": "Business Sectors",
+      "subtitle": "What We Offer",
+      "potato": "Potato Seeds",
+      "potatoDesc": "Production and distribution of the best international varieties with highest productivity and disease resistance.",
+      "fertilizers": "Fertilizers",
+      "fertilizersDesc": "Integrated plant nutrition solutions designed specifically for different soil types.",
+      "irrigation": "Irrigation Systems",
+      "irrigationDesc": "Modern and smart irrigation technologies to rationalize water consumption and increase efficiency.",
+      "pesticides": "Pesticides",
+      "pesticidesDesc": "Effective crop protection using the latest environmentally safe pesticides.",
+      "improvedSeeds": "Improved Seeds",
+      "improvedSeedsDesc": "Development of local strains to ensure self-sufficiency in high-quality seeds.",
+      "consulting": "Agricultural Consulting",
+      "consultingDesc": "Specialized technical expertise and field support team to ensure farmers' success."
+    },
+    "financial": {
+      "title": "Key Financial Indicators",
+      "subtitle": "Financial Performance",
+      "netProfit": "Current Net Profit",
+      "netProfitSub": "Positive growth",
+      "targetProfit": "Target Net Profit",
+      "targetProfitSub": "Next year plan",
+      "totalAssets": "Total Assets",
+      "totalAssetsSub": "Fixed and current assets",
+      "capital": "Capital",
+      "capitalSub": "Fully paid",
+      "currency": "EGP"
+    }
+  },
+  "products": {
+    "hero": {
+      "tag": "Special Section",
+      "title": "Our Products and Areas of",
+      "titleHighlight": "Excellence",
+      "description": "We provide integrated agricultural solutions with the highest international quality standards to enhance food security and develop the agricultural sector in the Arab region."
+    },
+    "potato": {
+      "tag": "Main Product",
+      "title": "Potato Seeds",
+      "description": "We specialize in producing, importing and exporting the best internationally certified potato seed varieties. Our focus is on providing high-yielding, disease-resistant strains to ensure the best return for farmers.",
+      "feature1": "Import of high-quality European varieties",
+      "feature2": "Advanced sorting and packaging stations",
+      "feature3": "Storage in modern refrigerators to ensure vitality",
+      "cta": "Request a Quote"
+    },
+    "items": {
+      "seeds": "Agricultural Seeds & Seedlings",
+      "seedsDesc": "Providing a wide range of vegetable and field crop seeds with the highest germination rates.",
+      "fertilizers": "Fertilizers & Nutrients",
+      "fertilizersDesc": "Integrated fertilization solutions including compound, mineral fertilizers and bio-fertilizers.",
+      "crops": "Agricultural Crops",
+      "cropsDesc": "Storage and export of fresh agricultural crops according to international specifications.",
+      "irrigation": "Irrigation Network Supplies",
+      "irrigationDesc": "Supply of all spare parts, solutions and network supplies for water conservation.",
+      "livestock": "Livestock & Poultry Production",
+      "livestockDesc": "Providing feed, nutritional additives and farm supplies to increase production.",
+      "consulting": "Agricultural Consulting",
+      "consultingDesc": "Providing technical support and specialized consultations for farmers and investors.",
+      "cta": "Contact Sales"
+    },
+    "cta": {
+      "title": "Looking for a Strategic Partner for Your Project?",
+      "description": "Our team of experts is ready to help you choose the best products and solutions that suit your needs and ensure the success of your agricultural season.",
+      "button1": "Contact Us Now",
+      "button2": "Browse Projects"
+    }
+  },
+  "projects": {
+    "hero": {
+      "title": "Projects",
+      "description": "Our strategic projects to enhance food security"
+    },
+    "tabs": {
+      "all": "All",
+      "ongoing": "Ongoing Projects",
+      "future": "Future Projects"
+    },
+    "items": {
+      "irrigation": {
+        "title": "Smart Irrigation Systems Development",
+        "desc": "Using artificial intelligence to rationalize water and increase irrigation efficiency.",
+        "status": "Under Implementation"
+      },
+      "desert": {
+        "title": "Desert Land Reclamation Project",
+        "desc": "Transforming the desert into productive green land using the latest technologies.",
+        "status": "Under Planning"
+      },
+      "greenhouse": {
+        "title": "Modern Greenhouse Project",
+        "desc": "Increasing productivity through protected and controlled agriculture.",
+        "status": "Under Implementation"
+      },
+      "vertical": {
+        "title": "Vertical Farming Project",
+        "desc": "Innovative agricultural solutions for densely populated urban areas.",
+        "status": "Future"
+      },
+      "seedProduction": {
+        "title": "Improved Seed Production Complex",
+        "desc": "Production of high-quality local strains for Arab farmers.",
+        "status": "Under Implementation"
+      },
+      "drone": {
+        "title": "Drone Monitoring Project",
+        "desc": "Crop monitoring and data analysis using drones.",
+        "status": "Technical"
+      }
+    },
+    "readMore": "Details"
+  },
+  "news": {
+    "hero": {
+      "tag": "Official Platform",
+      "title": "Media Center and Official News",
+      "description": "We bring you the latest developments and innovations in the world of seeds and sustainable agriculture in the Arab world."
+    },
+    "tabs": {
+      "company": "Company News",
+      "agriculture": "Agricultural News",
+      "press": "Press Releases",
+      "reports": "Annual Reports"
+    },
+    "items": {
+      "news1": {
+        "title": "Quarterly Results: Record Numbers in Grain Crops",
+        "date": "October 20, 2025",
+        "tag": "Achievements"
+      },
+      "news2": {
+        "title": "Signing International Cooperation Agreement to Develop Wheat Production Technologies",
+        "date": "October 15, 2025",
+        "tag": "International Partnership"
+      },
+      "news3": {
+        "title": "Launch of \"Seeds of the Future\" Initiative to Support Arab Farmers",
+        "date": "October 05, 2025",
+        "tag": "New Initiative"
+      }
+    },
+    "readMore": "Read More",
+    "newsletter": {
+      "title": "Official Updates Will Be Published Here Soon",
+      "description": "We are currently preparing detailed reports on the current season's harvest. Subscribe to our newsletter to receive the latest news from the Alliance.",
+      "placeholder": "Email Address",
+      "button": "Subscribe Now",
+      "privacy": "We respect your privacy, we will never send spam."
+    }
+  },
+  "footer": {
+    "description": "A leading company in the production, import and export of agricultural seeds, striving to achieve Arab food security through innovative agricultural solutions.",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contact": "Contact Us",
+    "address": "Address",
+    "addressValue": "Cairo, Egypt",
+    "phone": "Phone",
+    "email": "Email",
+    "rights": "© 2026 Arab Alliance for Seed Production. All rights reserved."
+  }
+}

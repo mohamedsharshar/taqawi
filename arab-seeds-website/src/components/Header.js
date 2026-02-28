@@ -1,20 +1,29 @@
 import React, { useState } from 'react';
-import { Menu, X, Search, Sun, Moon } from 'lucide-react';
+import { Menu, X, Search, Sun, Moon, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import Button from './Button';
-
-const navLinks = [
-  { id: 'home', label: 'الرئيسية' },
-  { id: 'about', label: 'عن الشركة' },
-  { id: 'products', label: 'المنتجات' },
-  { id: 'projects', label: 'المشروعات' },
-  { id: 'news', label: 'الأخبار' },
-  { id: 'investors', label: 'علاقات المستثمرين' },
-  { id: 'shareholders', label: 'المساهمون' },
-  { id: 'contact', label: 'اتصل بنا' },
-];
 
 const Header = ({ currentPage, setCurrentPage, isDarkMode, toggleTheme }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'ar' ? 'en' : 'ar';
+    i18n.changeLanguage(newLang);
+    document.documentElement.setAttribute('lang', newLang);
+    document.documentElement.setAttribute('dir', newLang === 'ar' ? 'rtl' : 'ltr');
+  };
+
+  const navLinks = [
+    { id: 'home', label: t('nav.home') },
+    { id: 'about', label: t('nav.about') },
+    { id: 'products', label: t('nav.products') },
+    { id: 'projects', label: t('nav.projects') },
+    { id: 'news', label: t('nav.news') },
+    { id: 'investors', label: t('nav.investors') },
+    { id: 'shareholders', label: t('nav.shareholders') },
+    { id: 'contact', label: t('nav.contact') },
+  ];
 
   return (
     <header className="bg-white dark:bg-[#1c1813] border-b border-gray-200 dark:border-[#332e27] sticky top-0 z-50 transition-colors">
@@ -31,8 +40,8 @@ const Header = ({ currentPage, setCurrentPage, isDarkMode, toggleTheme }) => {
               className="h-14 w-auto object-contain"
             />
             <div>
-              <h1 className="text-gray-900 dark:text-white font-bold text-lg leading-tight">التحالف العربي</h1>
-              <p className="text-yellow-600 dark:text-yellow-500 text-xs">لإنتاج التقاوي</p>
+              <h1 className="text-gray-900 dark:text-white font-bold text-lg leading-tight">{t('header.companyName')}</h1>
+              <p className="text-yellow-600 dark:text-yellow-500 text-xs">{t('header.companySubtitle')}</p>
             </div>
           </div>
 
@@ -57,6 +66,14 @@ const Header = ({ currentPage, setCurrentPage, isDarkMode, toggleTheme }) => {
           <div className="flex items-center gap-4">
             <div className="hidden lg:flex items-center gap-3">
               <button 
+                onClick={toggleLanguage}
+                className="text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors flex items-center gap-1 text-sm font-medium"
+                aria-label="تبديل اللغة"
+              >
+                <Globe className="w-5 h-5" />
+                <span>{i18n.language === 'ar' ? 'EN' : 'عربي'}</span>
+              </button>
+              <button 
                 onClick={toggleTheme}
                 className="text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-500 transition-colors"
                 aria-label="تبديل الوضع"
@@ -67,9 +84,16 @@ const Header = ({ currentPage, setCurrentPage, isDarkMode, toggleTheme }) => {
                 <Search className="w-5 h-5" />
               </button>
               <Button variant="outline" className="text-sm py-1.5 px-4">
-                تسجيل الدخول
+                {t('header.login')}
               </Button>
             </div>
+            <button 
+              onClick={toggleLanguage}
+              className="lg:hidden text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-500 text-xs font-medium"
+              aria-label="تبديل اللغة"
+            >
+              {i18n.language === 'ar' ? 'EN' : 'عربي'}
+            </button>
             <button 
               onClick={toggleTheme}
               className="lg:hidden text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-500"
@@ -107,7 +131,7 @@ const Header = ({ currentPage, setCurrentPage, isDarkMode, toggleTheme }) => {
             ))}
             <div className="py-4 flex gap-4">
               <Button variant="outline" className="w-full text-sm">
-                تسجيل الدخول
+                {t('header.login')}
               </Button>
             </div>
           </nav>

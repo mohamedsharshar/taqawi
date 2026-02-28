@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Search, Leaf, Sun, Moon } from 'lucide-react';
+import { Menu, X, Search, Sun, Moon } from 'lucide-react';
 import Button from './Button';
 
 const navLinks = [
@@ -22,12 +22,14 @@ const Header = ({ currentPage, setCurrentPage, isDarkMode, toggleTheme }) => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div 
-            className="flex items-center gap-2 cursor-pointer" 
+            className="flex items-center gap-3 cursor-pointer" 
             onClick={() => setCurrentPage('home')}
           >
-            <div className="text-yellow-600 dark:text-yellow-500">
-              <Leaf className="w-8 h-8" />
-            </div>
+            <img 
+              src="/images/logo.jpg" 
+              alt="التحالف العربي لإنتاج التقاوي" 
+              className="h-14 w-auto object-contain"
+            />
             <div>
               <h1 className="text-gray-900 dark:text-white font-bold text-lg leading-tight">التحالف العربي</h1>
               <p className="text-yellow-600 dark:text-yellow-500 text-xs">لإنتاج التقاوي</p>

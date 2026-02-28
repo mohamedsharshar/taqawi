@@ -191,6 +191,43 @@
       "name": "Name",
       "position": "Position",
       "representing": "Representing",
+      "members": {
+        "member1": {
+          "name": "Accountant / Ahmed Shawky Mohamed El-Sayed Montaser",
+          "role": "Chairman & Managing Director",
+          "entity": "Representing International Agricultural Crops Company"
+        },
+        "member2": {
+          "name": "Accountant / Nafe Fahmy Fahmy Abdel Meguid",
+          "role": "Vice Chairman - Non-Executive",
+          "entity": "Representing Safa International Group"
+        },
+        "member3": {
+          "name": "Engineer / Mohamed Salem Ahmed Salama",
+          "role": "Vice Chairman & Managing Director",
+          "entity": "Himself"
+        },
+        "member4": {
+          "name": "Mr. / Mohamed Saeed Hussein Khalil El-Sisi",
+          "role": "Board Member",
+          "entity": "Representing Egyptian Agricultural Bank"
+        },
+        "member5": {
+          "name": "Mr. / Ahmed Mohamed Mostafa Abdel Aziz El-Hasry",
+          "role": "Board Member",
+          "entity": "Representing Taiba Trading & Agencies Company"
+        },
+        "member6": {
+          "name": "Mr. / Ibrahim Hassan Ibrahim El-Hadidy",
+          "role": "Board Member",
+          "entity": "Representing Egyptian Agricultural Seeds Production Company"
+        },
+        "member7": {
+          "name": "Prof. Dr. / Ahmed Helmy Hussein Khalaf Gamea",
+          "role": "Board Member",
+          "entity": "Representing Research Unit at Horticulture Research Institute"
+        }
+      },
       "governance": {
         "title": "Governance Charter",
         "description": "Board members are selected according to competency standards and extensive experience in the agricultural and investment sector. The Board is committed to holding regular meetings to ensure operations align with sustainable Arab food security goals."
@@ -223,6 +260,7 @@
       "otherIncome": "Other Income",
       "interestIncome": "Interest Income",
       "netProfitBeforeTax": "Net Profit Before Tax",
+      "deductions": "Deductions:",
       "deferredTax": "Deferred Tax",
       "incomeTax": "Income Tax",
       "netProfit": "Net Profit"

@@ -192,13 +192,79 @@ const InvestorsPage = () => {
               <tbody className="bg-white dark:bg-[#1c1813] divide-y divide-gray-200 dark:divide-[#332e27]">
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
                   <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.generalExpenses')}</td>
-                  <td className="p-4 text-red-600 dark:text-red-400">(1,500,000)</td>
-                  <td className="p-4 text-red-600 dark:text-red-400">(2,050,000)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(14,836,159)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(15,875,278)</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.formationExpenses')}</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(1,026,209)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(1,026,209)</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.financeCosts')}</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(30,835)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(36,056)</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.purchaseExpenses')}</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">-</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(83,669)</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.foreignExchange')}</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(341,506)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(287,050)</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.creditLosses')}</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(1,554,595)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(1,012,146)</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.depreciation')}</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(414,517)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(751,144)</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.solidarityContribution')}</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(70,058)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(78,824)</td>
+                </tr>
+                <tr className="font-bold bg-amber-50 dark:bg-[#221e1a]">
+                  <td className="p-4 text-yellow-600 dark:text-yellow-500">{t('investors.income.totalExpenses')}</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(18,273,879)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(19,150,376)</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.otherIncome')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">-</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">7,500</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.interestIncome')}</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">28,023,139</td>
+                  <td className="p-4 text-gray-600 dark:text-gray-400">31,522,269</td>
+                </tr>
+                <tr className="font-bold bg-amber-50 dark:bg-[#221e1a]">
+                  <td className="p-4 text-yellow-600 dark:text-yellow-500">{t('investors.income.netProfitBeforeTax')}</td>
+                  <td className="p-4 text-green-600 dark:text-green-400">9,749,260</td>
+                  <td className="p-4 text-green-600 dark:text-green-400">12,379,393</td>
+                </tr>
+                <tr><td colSpan="3" className="p-4 text-yellow-600 dark:text-yellow-500 font-bold bg-amber-50 dark:bg-[#221e1a]">{t('investors.income.deductions')}</td></tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.deferredTax')}</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(175,191)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(236,565)</td>
+                </tr>
+                <tr className="hover:bg-gray-50 dark:hover:bg-[#221e1a]">
+                  <td className="p-4 text-gray-700 dark:text-gray-300">{t('investors.income.incomeTax')}</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(2,400,086)</td>
+                  <td className="p-4 text-red-600 dark:text-red-400">(2,922,662)</td>
                 </tr>
                 <tr className="font-bold bg-yellow-100 dark:bg-yellow-500/10">
                   <td className="p-4 text-gray-900 dark:text-white text-lg">{t('investors.income.netProfit')}</td>
-                  <td className="p-4 text-green-600 dark:text-green-400 text-lg">7,170,000</td>
-                  <td className="p-4 text-green-600 dark:text-green-400 text-lg">9,220,000</td>
+                  <td className="p-4 text-green-600 dark:text-green-400 text-lg">7,173,983</td>
+                  <td className="p-4 text-green-600 dark:text-green-400 text-lg">9,220,166</td>
                 </tr>
               </tbody>
             </table>

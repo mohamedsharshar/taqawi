@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Shield } from 'lucide-react';
 import Card from '../components/Card';
 import SectionTitle from '../components/SectionTitle';
+import ShareholdersPieChart from '../components/ShareholdersPieChart';
 
 const boardMembers = [
   { name: 'المحاسب / أحمد شوقي محمد السيد منتصر', role: 'رئيس مجلس الإدارة والعضو المنتدب', entity: 'ممثلاً عن الشركة الدولية للمحاصيل الزراعية' },
@@ -16,6 +17,44 @@ const boardMembers = [
 
 const ShareholdersPage = () => {
   const { t } = useTranslation();
+  
+  const boardMembers = [
+    { 
+      name: t('shareholders.board.members.member1.name'),
+      role: t('shareholders.board.members.member1.role'),
+      entity: t('shareholders.board.members.member1.entity')
+    },
+    { 
+      name: t('shareholders.board.members.member2.name'),
+      role: t('shareholders.board.members.member2.role'),
+      entity: t('shareholders.board.members.member2.entity')
+    },
+    { 
+      name: t('shareholders.board.members.member3.name'),
+      role: t('shareholders.board.members.member3.role'),
+      entity: t('shareholders.board.members.member3.entity')
+    },
+    { 
+      name: t('shareholders.board.members.member4.name'),
+      role: t('shareholders.board.members.member4.role'),
+      entity: t('shareholders.board.members.member4.entity')
+    },
+    { 
+      name: t('shareholders.board.members.member5.name'),
+      role: t('shareholders.board.members.member5.role'),
+      entity: t('shareholders.board.members.member5.entity')
+    },
+    { 
+      name: t('shareholders.board.members.member6.name'),
+      role: t('shareholders.board.members.member6.role'),
+      entity: t('shareholders.board.members.member6.entity')
+    },
+    { 
+      name: t('shareholders.board.members.member7.name'),
+      role: t('shareholders.board.members.member7.role'),
+      entity: t('shareholders.board.members.member7.entity')
+    },
+  ];
   
   return (
   <div className="space-y-16 pb-20 pt-10 bg-gradient-to-b from-amber-50 to-white dark:from-[#1c1813] dark:to-[#1c1813]">
@@ -143,6 +182,18 @@ const ShareholdersPage = () => {
             </li>
           </ul>
         </Card>
+      </div>
+    </section>
+
+    <section className="max-w-6xl mx-auto px-4 mb-16">
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">{t('shareholders.distribution.title')}</h2>
+        <span className="bg-amber-100 dark:bg-[#2a2520] text-gray-700 dark:text-gray-400 text-xs px-3 py-1 rounded border border-gray-200 dark:border-[#332e27] shadow-sm">
+          {t('shareholders.table.year')}
+        </span>
+      </div>
+      <div className="bg-white dark:bg-[#221e1a] rounded-xl border border-gray-200 dark:border-[#332e27] p-8 shadow-lg">
+        <ShareholdersPieChart />
       </div>
     </section>
 

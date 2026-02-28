@@ -118,6 +118,7 @@ const ShareholdersPieChart = () => {
                 strokeStyle: datasets[0].backgroundColor[i],
                 hidden: false,
                 index: i,
+                fontColor: isDark ? '#ffffff' : '#000000',
               };
             });
           },

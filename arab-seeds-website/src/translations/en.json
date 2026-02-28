@@ -24,9 +24,9 @@
     },
     "info": {
       "foundingYear": "Founding Year",
-      "foundingYearValue": "2024",
+      "foundingYearValue": "January 10, 2024",
       "legalForm": "Legal Form",
-      "legalFormValue": "Joint Stock Company"
+      "legalFormValue": "Egyptian Joint Stock Company"
     },
     "sectors": {
       "title": "Business Sectors",
@@ -48,14 +48,253 @@
       "title": "Key Financial Indicators",
       "subtitle": "Financial Performance",
       "netProfit": "Current Net Profit",
+      "netProfitValue": "7.17M EGP",
       "netProfitSub": "Positive growth",
       "targetProfit": "Target Net Profit",
+      "targetProfitValue": "9.22M EGP",
       "targetProfitSub": "Next year plan",
       "totalAssets": "Total Assets",
+      "totalAssetsValue": "779M EGP",
       "totalAssetsSub": "Fixed and current assets",
       "capital": "Capital",
+      "capitalValue": "612.5M EGP",
       "capitalSub": "Fully paid",
       "currency": "EGP"
+    }
+  },
+  "about": {
+    "hero": {
+      "tag": "About Us",
+      "title": "Journey of Growth and Development"
+    },
+    "values": {
+      "title": "Our Core Values",
+      "quality": "Quality: Commitment to the highest standards of agricultural production.",
+      "sustainability": "Sustainability: Supporting farmers to ensure a better future.",
+      "reliability": "Reliability: Leadership in the Arab regional market."
+    },
+    "founding": {
+      "title": "Company Establishment and Identity",
+      "description1": "Arab Alliance for Seed Production (Egyptian Joint Stock Company) was established on January 10, 2024 in accordance with Law No. 159 of 1981 and its executive regulations. Our journey began with an ambitious vision to bridge the gap in high-quality seed production.",
+      "description2": "On October 29, 2025, the company name was amended to 'Arab Alliance for Seed Production' to reflect our new expansionary vision and ambition to lead the agricultural sector across the Arab region."
+    },
+    "purpose": {
+      "title": "Company Purpose",
+      "item1": "Production of all types of agricultural seeds from vegetables and fruits, especially potato seeds",
+      "item2": "Screening, sorting and storage of agricultural crop seeds in designated refrigerators",
+      "item3": "Trading in fertilizers, nutrients, agricultural chemicals, raw materials and pesticides",
+      "item4": "Marketing and selling crops, seeds and agricultural products",
+      "item5": "Establishing and operating factories for manufacturing, packaging solid and liquid fertilizers"
+    },
+    "legal": {
+      "title": "Legal Status and Accreditation",
+      "description": "The company operates in accordance with Law No. 159 of 1981 and its executive regulations as an Egyptian joint stock company, committed to the highest standards of governance and legal transparency. It was registered in the commercial register under number 223869 on 10/1/2024.",
+      "download": "Download Commercial Register and Documents"
+    },
+    "capital": {
+      "title": "Capital Evolution",
+      "subtitle": "Overview of the company's financial value growth from establishment to 2025",
+      "info": {
+        "title": "Company Capital",
+        "authorized": "Authorized Capital",
+        "authorizedValue": "1,000,000,000 EGP (One Billion EGP)",
+        "issued": "Issued and Paid Capital",
+        "issuedValue": "612,500,000 EGP (100% Paid)",
+        "shares": "Distributed over 612,500,000 shares with nominal value of 1 EGP per share"
+      },
+      "timeline": {
+        "jan2024": {
+          "date": "January 2024",
+          "title": "100M EGP",
+          "desc": "Capital at establishment"
+        },
+        "aug2024": {
+          "date": "August 2024",
+          "title": "108M EGP",
+          "desc": "First capital increase"
+        },
+        "aug2024_2": {
+          "date": "August 2024",
+          "title": "125M EGP",
+          "desc": "Strategic expansion"
+        },
+        "jan2025": {
+          "date": "January 2025",
+          "title": "236.5M EGP",
+          "desc": "Strategic expansion"
+        },
+        "jul2025": {
+          "date": "July 2025",
+          "title": "338M EGP",
+          "desc": "Acquisitions and development"
+        },
+        "sep2025": {
+          "date": "September 2025",
+          "title": "350.5M EGP",
+          "desc": "Production line expansion"
+        },
+        "dec2025": {
+          "date": "December 2025",
+          "title": "612.5M EGP",
+          "desc": "Current capital"
+        }
+      }
+    }
+  },
+  "shareholders": {
+    "hero": {
+      "title": "Shareholder Structure and Official Board of Directors",
+      "description": "Corporate data and governance of Arab Alliance for Seed Production. We are committed to the highest standards of transparency in managing our agricultural investments."
+    },
+    "structure": {
+      "title": "1.6 Shareholder Structure",
+      "number": "#",
+      "name": "Name",
+      "shares": "Shares",
+      "nominalValue": "Nominal Value",
+      "percentage": "Percentage",
+      "total": "Total"
+    },
+    "table": {
+      "title": "Detailed Shareholder Register",
+      "year": "Fiscal Year 2025",
+      "shareholder": "Shareholder",
+      "shares": "Number of Shares",
+      "percentage": "Percentage",
+      "total": "Grand Total"
+    },
+    "companies": {
+      "international": "International Agricultural Crops Company",
+      "safa": "Safa International Group",
+      "egyptian": "Egyptian-French Tissue Culture Company",
+      "bank": "Egyptian Agricultural Bank",
+      "taiba": "Taiba Trading & Agencies Company",
+      "others": "Other Shareholders"
+    },
+    "distribution": {
+      "title": "Total Share Distribution",
+      "totalShares": "Total Shares",
+      "legend1": "International Agricultural Crops (32.82%)",
+      "legend2": "Safa International (21.36%)",
+      "legend3": "Other Shareholders (45.82%)"
+    },
+    "board": {
+      "title": "1.7 Board of Directors",
+      "subtitle": "Strategic leadership guiding the Alliance towards sustainable growth",
+      "name": "Name",
+      "position": "Position",
+      "representing": "Representing",
+      "governance": {
+        "title": "Governance Charter",
+        "description": "Board members are selected according to competency standards and extensive experience in the agricultural and investment sector. The Board is committed to holding regular meetings to ensure operations align with sustainable Arab food security goals."
+      }
+    }
+  },
+  "investors": {
+    "hero": {
+      "title": "Investor Relations",
+      "description": "Financial data, governance reports and transparency"
+    },
+    "tabs": {
+      "reports": "Financial Reports",
+      "calendar": "Investor Calendar"
+    },
+    "income": {
+      "title": "1.8.1 Income Statement",
+      "valueInEgp": "Value in EGP",
+      "june2025": "June 30, 2025",
+      "sept2025": "September 30, 2025",
+      "generalExpenses": "General & Administrative Expenses",
+      "formationExpenses": "Formation Expenses",
+      "financeCosts": "Finance Costs",
+      "purchaseExpenses": "Purchase Expenses",
+      "foreignExchange": "Foreign Exchange",
+      "creditLosses": "Expected Credit Losses",
+      "depreciation": "Fixed Assets Depreciation",
+      "solidarityContribution": "Solidarity Contribution",
+      "totalExpenses": "Total Expenses",
+      "otherIncome": "Other Income",
+      "interestIncome": "Interest Income",
+      "netProfitBeforeTax": "Net Profit Before Tax",
+      "deferredTax": "Deferred Tax",
+      "incomeTax": "Income Tax",
+      "netProfit": "Net Profit"
+    },
+    "balance": {
+      "title": "1.8.2 Statement of Financial Position",
+      "download": "Download PDF",
+      "valueInEgp": "Value in EGP",
+      "june2025": "June 30, 2025",
+      "sept2025": "September 30, 2025",
+      "nonCurrentAssets": "Non-Current Assets:",
+      "fixedAssets": "Fixed Assets (Net)",
+      "projectsInProgress": "Projects in Progress",
+      "totalNonCurrent": "Total Non-Current Assets",
+      "currentAssets": "Current Assets:",
+      "inventory": "Inventory",
+      "receivables": "Debtors & Other Receivables",
+      "advancePayments": "Suppliers Advance Payments",
+      "cash": "Cash at Banks",
+      "totalCurrent": "Total Current Assets",
+      "totalAssets": "Total Assets",
+      "currentLiabilities": "Current Liabilities:",
+      "suppliersPayable": "Suppliers & Notes Payable",
+      "fixedAssetsCreditors": "Fixed Assets Creditors",
+      "otherCreditors": "Other Creditors & Balances",
+      "totalCurrentLiabilities": "Total Current Liabilities",
+      "workingCapital": "Working Capital",
+      "totalInvestment": "Total Investment",
+      "equity": "Equity:",
+      "issuedCapital": "Issued & Paid Capital",
+      "capitalIncrease": "Capital Increase Collected",
+      "netProfitPeriod": "Net Profit",
+      "totalEquity": "Total Equity",
+      "nonCurrentLiabilities": "Non-Current Liabilities:",
+      "leaseLiabilities": "Lease Liabilities",
+      "deferredTaxLiabilities": "Deferred Tax Liabilities",
+      "totalNonCurrentLiabilities": "Total Non-Current Liabilities",
+      "totalLiabilities": "Total Liabilities",
+      "totalEquityAndNonCurrentLiabilities": "Total Equity & Non-Current Liabilities",
+      "totalEquityAndLiabilities": "Total Equity & Liabilities"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "We are here to answer your inquiries and help you with everything related to our products and agricultural solutions."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email Address",
+      "emailPlaceholder": "name@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Choose message subject",
+      "subjectOptions": {
+        "products": "Product Inquiry",
+        "investors": "Investor Relations",
+        "jobs": "Job Application",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Write your inquiry details here...",
+      "submit": "Send Message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "addressValue": "Cairo, Arab Republic of Egypt",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Working Hours",
+      "weekdays": "Sunday - Thursday",
+      "weekdaysTime": "8:00 AM - 4:00 PM",
+      "weekend": "Friday - Saturday",
+      "closed": "Closed"
+    },
+    "map": {
+      "title": "Arab Alliance Headquarters"
     }
   },
   "products": {
@@ -164,7 +403,7 @@
         "tag": "International Partnership"
       },
       "news3": {
-        "title": "Launch of \"Seeds of the Future\" Initiative to Support Arab Farmers",
+        "title": "Launch of 'Seeds of the Future' Initiative to Support Arab Farmers",
         "date": "October 05, 2025",
         "tag": "New Initiative"
       }

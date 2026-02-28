@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -14,6 +15,7 @@ import ContactPage from './pages/ContactPage';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -22,6 +24,10 @@ function App() {
       document.documentElement.classList.add('dark');
     }
   }, []);
+
+  useEffect(() => {
+    document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+  }, [i18n.language]);
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
@@ -58,7 +64,7 @@ function App() {
   };
 
   return (
-    <div className="App" dir="rtl">
+    <div className="App">
       <Header 
         currentPage={currentPage} 
         setCurrentPage={setCurrentPage}

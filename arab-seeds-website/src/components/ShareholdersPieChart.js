@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
@@ -9,6 +9,22 @@ ChartJS.register(ArcElement, Tooltip, Legend, ChartDataLabels);
 const ShareholdersPieChart = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
+  const [isDark, setIsDark] = useState(document.documentElement.classList.contains('dark'));
+
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      const newIsDark = document.documentElement.classList.contains('dark');
+      console.log('Dark mode changed:', newIsDark);
+      setIsDark(newIsDark);
+    });
+    
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   const data = {
     labels: [
@@ -81,17 +97,17 @@ const ShareholdersPieChart = () => {
         position: 'bottom',
         rtl: isRTL,
         labels: {
-          color: '#9ca3af',
+          color: isDark ? '#ffffff' : '#1f2937',
           font: {
-            size: 11,
+            size: 12,
             family: isRTL ? 'Cairo, sans-serif' : 'Inter, sans-serif',
-            weight: '500',
+            weight: '600',
           },
-          padding: 12,
+          padding: 15,
           usePointStyle: true,
           pointStyle: 'circle',
-          boxWidth: 10,
-          boxHeight: 10,
+          boxWidth: 12,
+          boxHeight: 12,
           generateLabels: (chart) => {
             const datasets = chart.data.datasets;
             return chart.data.labels.map((label, i) => {
@@ -141,7 +157,7 @@ const ShareholdersPieChart = () => {
 
   return (
     <div className="w-full h-[550px] flex items-center justify-center">
-      <Pie data={data} options={options} />
+      <Pie key={isDark ? 'dark' : 'light'} data={data} options={options} />
     </div>
   );
 };

@@ -35,7 +35,7 @@ class MeetingMinute extends Model
 
     public function getFileUrlAttribute(): string
     {
-        return Storage::url($this->file_path);
+        return url(Storage::url($this->file_path));
     }
 
     public function scopeActive($query)

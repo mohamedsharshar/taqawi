@@ -10,13 +10,6 @@ use Illuminate\Support\Facades\Storage;
 
 class IrManagerController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth:sanctum')->except('index');
-        $this->middleware('permission:view ir manager')->only('index');
-        $this->middleware('permission:edit ir manager')->only(['store', 'update', 'destroy']);
-    }
-
     public function index(): JsonResponse
     {
         $manager = IrManager::active()->first();

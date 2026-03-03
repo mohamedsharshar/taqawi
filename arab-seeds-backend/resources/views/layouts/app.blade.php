@@ -26,44 +26,62 @@
     <style>
         * {
             font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         
-        /* Dark mode colors */
-        .dark-bg-primary { background-color: #1c1813; }
-        .dark-bg-secondary { background-color: #221e1a; }
-        .dark-bg-tertiary { background-color: #2a2520; }
-        .dark-border { border-color: #332e27; }
+        body {
+            background-color: #faf8f5;
+            color: #2c2520;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .dark body {
+            background-color: #1c1813;
+            color: #e5e5e5;
+        }
         
         /* Smooth transitions */
         * {
             transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
         }
         
-        /* Custom scrollbar */
+        /* Scrollbar Styling */
         ::-webkit-scrollbar {
             width: 10px;
         }
         
         ::-webkit-scrollbar-track {
-            background: #f1f1f1;
+            background: #f5f1ed;
         }
         
-        ::-webkit-scrollbar-thumb {
-            background: #d97706;
-            border-radius: 5px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: #b45309;
-        }
-        
-        /* Dark mode scrollbar */
         .dark ::-webkit-scrollbar-track {
             background: #1c1813;
         }
         
+        ::-webkit-scrollbar-thumb {
+            background: #d4c5b9;
+            border-radius: 5px;
+        }
+        
         .dark ::-webkit-scrollbar-thumb {
-            background: #d97706;
+            background: #332e27;
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c59d5f;
+        }
+        
+        .dark ::-webkit-scrollbar-thumb:hover {
+            background: #eab308;
+        }
+        
+        .dir-ltr {
+            direction: ltr;
         }
     </style>
     

@@ -32,6 +32,14 @@
                    class="text-sm font-medium transition-colors hover:text-yellow-600 dark:hover:text-yellow-500 {{ request()->routeIs('products') ? 'text-yellow-600 dark:text-yellow-500 border-b-2 border-yellow-600 dark:border-yellow-500 pb-1' : 'text-gray-700 dark:text-gray-300' }}">
                     {{ app()->getLocale() == 'ar' ? 'المنتجات' : 'Products' }}
                 </a>
+                <a href="{{ route('projects') }}" 
+                   class="text-sm font-medium transition-colors hover:text-yellow-600 dark:hover:text-yellow-500 {{ request()->routeIs('projects') ? 'text-yellow-600 dark:text-yellow-500 border-b-2 border-yellow-600 dark:border-yellow-500 pb-1' : 'text-gray-700 dark:text-gray-300' }}">
+                    {{ app()->getLocale() == 'ar' ? 'المشروعات' : 'Projects' }}
+                </a>
+                <a href="{{ route('news') }}" 
+                   class="text-sm font-medium transition-colors hover:text-yellow-600 dark:hover:text-yellow-500 {{ request()->routeIs('news') ? 'text-yellow-600 dark:text-yellow-500 border-b-2 border-yellow-600 dark:border-yellow-500 pb-1' : 'text-gray-700 dark:text-gray-300' }}">
+                    {{ app()->getLocale() == 'ar' ? 'الأخبار' : 'News' }}
+                </a>
                 <a href="{{ route('investors') }}" 
                    class="text-sm font-medium transition-colors hover:text-yellow-600 dark:hover:text-yellow-500 {{ request()->routeIs('investors') ? 'text-yellow-600 dark:text-yellow-500 border-b-2 border-yellow-600 dark:border-yellow-500 pb-1' : 'text-gray-700 dark:text-gray-300' }}">
                     {{ app()->getLocale() == 'ar' ? 'علاقات المستثمرين' : 'Investors' }}
@@ -92,6 +100,12 @@
             </a>
             <a href="{{ route('products') }}" class="text-right py-3 text-sm font-medium border-b border-gray-200 dark:border-[#332e27] {{ request()->routeIs('products') ? 'text-yellow-600 dark:text-yellow-500' : 'text-gray-700 dark:text-gray-300' }}">
                 {{ app()->getLocale() == 'ar' ? 'المنتجات' : 'Products' }}
+            </a>
+            <a href="{{ route('projects') }}" class="text-right py-3 text-sm font-medium border-b border-gray-200 dark:border-[#332e27] {{ request()->routeIs('projects') ? 'text-yellow-600 dark:text-yellow-500' : 'text-gray-700 dark:text-gray-300' }}">
+                {{ app()->getLocale() == 'ar' ? 'المشروعات' : 'Projects' }}
+            </a>
+            <a href="{{ route('news') }}" class="text-right py-3 text-sm font-medium border-b border-gray-200 dark:border-[#332e27] {{ request()->routeIs('news') ? 'text-yellow-600 dark:text-yellow-500' : 'text-gray-700 dark:text-gray-300' }}">
+                {{ app()->getLocale() == 'ar' ? 'الأخبار' : 'News' }}
             </a>
             <a href="{{ route('investors') }}" class="text-right py-3 text-sm font-medium border-b border-gray-200 dark:border-[#332e27] {{ request()->routeIs('investors') ? 'text-yellow-600 dark:text-yellow-500' : 'text-gray-700 dark:text-gray-300' }}">
                 {{ app()->getLocale() == 'ar' ? 'علاقات المستثمرين' : 'Investors' }}

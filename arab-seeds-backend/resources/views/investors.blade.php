@@ -31,7 +31,7 @@
                            class="block p-2 hover:bg-gray-50 dark:hover:bg-[#1c1813] rounded text-sm">
                             <div class="flex items-center justify-between">
                                 <span class="text-gray-700 dark:text-gray-300">
-                                    {{ $locale == 'ar' ? $statement->title['ar'] : $statement->title['en'] }}
+                                    {{ is_array($statement->title) ? ($locale == 'ar' ? $statement->title['ar'] : $statement->title['en']) : $statement->title }}
                                 </span>
                                 <i data-lucide="download" class="w-4 h-4 text-yellow-600 dark:text-yellow-500"></i>
                             </div>
@@ -66,7 +66,7 @@
                            class="block p-2 hover:bg-gray-50 dark:hover:bg-[#1c1813] rounded text-sm">
                             <div class="flex items-center justify-between">
                                 <span class="text-gray-700 dark:text-gray-300">
-                                    {{ $locale == 'ar' ? $minute->title['ar'] : $minute->title['en'] }}
+                                    {{ is_array($minute->title) ? ($locale == 'ar' ? $minute->title['ar'] : $minute->title['en']) : $minute->title }}
                                 </span>
                                 <i data-lucide="download" class="w-4 h-4 text-yellow-600 dark:text-yellow-500"></i>
                             </div>
@@ -97,10 +97,10 @@
                         <div>
                             <p class="text-xs text-gray-500 dark:text-gray-500 mb-1">{{ $data['irManager']['labels']['name'] }}</p>
                             <p class="text-sm font-medium text-gray-900 dark:text-white">
-                                {{ $locale == 'ar' ? $data['irManager']['data']->name['ar'] : $data['irManager']['data']->name['en'] }}
+                                {{ is_array($data['irManager']['data']->name) ? ($locale == 'ar' ? $data['irManager']['data']->name['ar'] : $data['irManager']['data']->name['en']) : $data['irManager']['data']->name }}
                             </p>
                             <p class="text-xs text-gray-500 dark:text-gray-400">
-                                {{ $locale == 'ar' ? $data['irManager']['data']->position['ar'] : $data['irManager']['data']->position['en'] }}
+                                {{ is_array($data['irManager']['data']->position) ? ($locale == 'ar' ? $data['irManager']['data']->position['ar'] : $data['irManager']['data']->position['en']) : $data['irManager']['data']->position }}
                             </p>
                         </div>
                         <div class="flex items-center gap-2">

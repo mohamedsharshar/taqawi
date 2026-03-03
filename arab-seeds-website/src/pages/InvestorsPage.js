@@ -31,6 +31,18 @@ const InvestorsPage = () => {
 
     fetchData();
   }, []);
+
+  // Helper function to get translated text
+  const getTranslation = (obj, field) => {
+    if (!obj || !obj[field]) return '';
+    
+    // If it's already a string, return it
+    if (typeof obj[field] === 'string') return obj[field];
+    
+    // If it's an object with translations, get the current language
+    const currentLang = i18n.language;
+    return obj[field][currentLang] || obj[field]['ar'] || obj[field]['en'] || '';
+  };
   
   return (
     <div className="space-y-12 pb-20 pt-10 bg-gradient-to-b from-amber-50 to-white dark:from-[#1c1813] dark:to-[#1c1813]">
@@ -79,7 +91,7 @@ const InvestorsPage = () => {
                     >
                       <div className="flex items-center justify-between">
                         <span className="text-gray-700 dark:text-gray-300">
-                          {i18n.language === 'ar' ? statement.title_ar : statement.title_en}
+                          {getTranslation(statement, 'title')}
                         </span>
                         <Download className="w-4 h-4 text-yellow-600 dark:text-yellow-500" />
                       </div>
@@ -116,7 +128,7 @@ const InvestorsPage = () => {
                     >
                       <div className="flex items-center justify-between">
                         <span className="text-gray-700 dark:text-gray-300">
-                          {i18n.language === 'ar' ? minute.title_ar : minute.title_en}
+                          {getTranslation(minute, 'title')}
                         </span>
                         <Download className="w-4 h-4 text-yellow-600 dark:text-yellow-500" />
                       </div>
@@ -145,10 +157,10 @@ const InvestorsPage = () => {
                   <div>
                     <p className="text-xs text-gray-500 dark:text-gray-500 mb-1">{t('investors.irManager.name')}</p>
                     <p className="text-sm font-medium text-gray-900 dark:text-white">
-                      {i18n.language === 'ar' ? irManager.name_ar : irManager.name_en}
+                      {getTranslation(irManager, 'name')}
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400">
-                      {i18n.language === 'ar' ? irManager.position_ar : irManager.position_en}
+                      {getTranslation(irManager, 'position')}
                     </p>
                   </div>
                   <div className="flex items-center gap-2">

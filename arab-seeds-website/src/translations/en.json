@@ -243,6 +243,25 @@
       "reports": "Financial Reports",
       "calendar": "Investor Calendar"
     },
+    "financialStatements": {
+      "title": "Financial Statements",
+      "description": "Download official company financial statements",
+      "download": "Download PDF"
+    },
+    "minutes": {
+      "title": "General Assembly and Board Minutes",
+      "description": "Minutes of general assembly and board of directors meetings",
+      "download": "Download PDF"
+    },
+    "irManager": {
+      "title": "Investor Relations Manager",
+      "name": "Name",
+      "nameValue": "Ahmed Mohamed Ali",
+      "phone": "Phone Number",
+      "phoneValue": "+20 123 456 7890",
+      "email": "Email",
+      "emailValue": "ir@arabseeds.com"
+    },
     "income": {
       "title": "1.8.1 Income Statement",
       "valueInEgp": "Value in EGP",

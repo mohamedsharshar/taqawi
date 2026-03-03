@@ -1,0 +1,16 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "php artisan serve",
+        "migrate": "php artisan migrate",
+        "migrate:fresh": "php artisan migrate:fresh --seed",
+        "seed": "php artisan db:seed",
+        "test": "php artisan test"
+    },
+    "devDependencies": {
+        "axios": "^1.7.4",
+        "laravel-vite-plugin": "^1.0",
+        "vite": "^5.0"
+    }
+}

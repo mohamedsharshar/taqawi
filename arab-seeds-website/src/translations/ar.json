@@ -243,6 +243,25 @@
       "reports": "تقارير مالية",
       "calendar": "مفكرة المستثمرين"
     },
+    "financialStatements": {
+      "title": "القوائم المالية",
+      "description": "تحميل القوائم المالية الرسمية للشركة",
+      "download": "تحميل PDF"
+    },
+    "minutes": {
+      "title": "محاضر الجمعيات ومجالس الإدارة",
+      "description": "محاضر اجتماعات الجمعية العمومية ومجلس الإدارة",
+      "download": "تحميل PDF"
+    },
+    "irManager": {
+      "title": "مدير علاقات المستثمرين",
+      "name": "الاسم",
+      "nameValue": "أحمد محمد علي",
+      "phone": "رقم الهاتف",
+      "phoneValue": "+20 123 456 7890",
+      "email": "البريد الإلكتروني",
+      "emailValue": "ir@arabseeds.com"
+    },
     "income": {
       "title": "1.8.1 قائمة الدخل",
       "valueInEgp": "القيمة بالجنيه",

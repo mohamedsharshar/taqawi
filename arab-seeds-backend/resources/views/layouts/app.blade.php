@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
+<html lang="{{ app()->getLocale() }}" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}" class="{{ request()->cookie('darkMode') === 'true' ? 'dark' : '' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,7 +87,7 @@
     
     @stack('styles')
 </head>
-<body class="bg-white dark:bg-[#1c1813] text-gray-900 dark:text-white">
+<body class="bg-white dark:bg-[#1c1813] text-gray-900 dark:text-white transition-colors">
     @include('layouts.header')
     
     <main>
@@ -103,13 +103,30 @@
         // Dark mode toggle
         function toggleDarkMode() {
             document.documentElement.classList.toggle('dark');
-            localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+            const isDark = document.documentElement.classList.contains('dark');
+            
+            // Save to cookie
+            document.cookie = `darkMode=${isDark}; path=/; max-age=31536000`;
+            
+            // Save to localStorage as backup
+            localStorage.setItem('darkMode', isDark);
         }
         
-        // Load dark mode preference
-        if (localStorage.getItem('darkMode') === 'true') {
-            document.documentElement.classList.add('dark');
-        }
+        // Load dark mode preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check localStorage first
+            const savedDarkMode = localStorage.getItem('darkMode');
+            if (savedDarkMode === 'true') {
+                document.documentElement.classList.add('dark');
+                document.cookie = 'darkMode=true; path=/; max-age=31536000';
+            } else if (savedDarkMode === 'false') {
+                document.documentElement.classList.remove('dark');
+                document.cookie = 'darkMode=false; path=/; max-age=31536000';
+            }
+            
+            // Re-initialize icons after DOM is ready
+            lucide.createIcons();
+        });
     </script>
     
     @stack('scripts')

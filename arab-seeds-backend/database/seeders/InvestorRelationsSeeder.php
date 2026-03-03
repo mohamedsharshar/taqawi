@@ -13,10 +13,14 @@ class InvestorRelationsSeeder extends Seeder
     {
         // Create IR Manager
         IrManager::create([
-            'name_ar' => 'أحمد محمد علي',
-            'name_en' => 'Ahmed Mohamed Ali',
-            'position_ar' => 'مدير علاقات المستثمرين',
-            'position_en' => 'Investor Relations Manager',
+            'name' => [
+                'ar' => 'أحمد محمد علي',
+                'en' => 'Ahmed Mohamed Ali',
+            ],
+            'position' => [
+                'ar' => 'مدير علاقات المستثمرين',
+                'en' => 'Investor Relations Manager',
+            ],
             'phone' => '+20 123 456 7890',
             'email' => 'ir@arabseeds.com',
             'is_active' => true,
@@ -24,10 +28,14 @@ class InvestorRelationsSeeder extends Seeder
 
         // Create sample financial statements
         FinancialStatement::create([
-            'title_ar' => 'قائمة المركز المالي - يونيو 2025',
-            'title_en' => 'Balance Sheet - June 2025',
-            'description_ar' => 'قائمة المركز المالي للربع الثاني من عام 2025',
-            'description_en' => 'Balance sheet for Q2 2025',
+            'title' => [
+                'ar' => 'قائمة المركز المالي - يونيو 2025',
+                'en' => 'Balance Sheet - June 2025',
+            ],
+            'description' => [
+                'ar' => 'قائمة المركز المالي للربع الثاني من عام 2025',
+                'en' => 'Balance sheet for Q2 2025',
+            ],
             'file_path' => 'financial-statements/sample.pdf',
             'file_name' => 'balance-sheet-june-2025.pdf',
             'file_size' => 1024000,
@@ -38,10 +46,14 @@ class InvestorRelationsSeeder extends Seeder
         ]);
 
         FinancialStatement::create([
-            'title_ar' => 'قائمة الدخل - سبتمبر 2025',
-            'title_en' => 'Income Statement - September 2025',
-            'description_ar' => 'قائمة الدخل للربع الثالث من عام 2025',
-            'description_en' => 'Income statement for Q3 2025',
+            'title' => [
+                'ar' => 'قائمة الدخل - سبتمبر 2025',
+                'en' => 'Income Statement - September 2025',
+            ],
+            'description' => [
+                'ar' => 'قائمة الدخل للربع الثالث من عام 2025',
+                'en' => 'Income statement for Q3 2025',
+            ],
             'file_path' => 'financial-statements/sample.pdf',
             'file_name' => 'income-statement-sept-2025.pdf',
             'file_size' => 1024000,
@@ -53,10 +65,14 @@ class InvestorRelationsSeeder extends Seeder
 
         // Create sample meeting minutes
         MeetingMinute::create([
-            'title_ar' => 'محضر اجتماع الجمعية العمومية - يناير 2025',
-            'title_en' => 'General Assembly Meeting Minutes - January 2025',
-            'description_ar' => 'محضر اجتماع الجمعية العمومية العادية',
-            'description_en' => 'Regular general assembly meeting minutes',
+            'title' => [
+                'ar' => 'محضر اجتماع الجمعية العمومية - يناير 2025',
+                'en' => 'General Assembly Meeting Minutes - January 2025',
+            ],
+            'description' => [
+                'ar' => 'محضر اجتماع الجمعية العمومية العادية',
+                'en' => 'Regular general assembly meeting minutes',
+            ],
             'file_path' => 'meeting-minutes/sample.pdf',
             'file_name' => 'general-assembly-jan-2025.pdf',
             'file_size' => 2048000,
@@ -67,10 +83,14 @@ class InvestorRelationsSeeder extends Seeder
         ]);
 
         MeetingMinute::create([
-            'title_ar' => 'محضر اجتماع مجلس الإدارة - مارس 2025',
-            'title_en' => 'Board Meeting Minutes - March 2025',
-            'description_ar' => 'محضر اجتماع مجلس الإدارة الدوري',
-            'description_en' => 'Regular board meeting minutes',
+            'title' => [
+                'ar' => 'محضر اجتماع مجلس الإدارة - مارس 2025',
+                'en' => 'Board Meeting Minutes - March 2025',
+            ],
+            'description' => [
+                'ar' => 'محضر اجتماع مجلس الإدارة الدوري',
+                'en' => 'Regular board meeting minutes',
+            ],
             'file_path' => 'meeting-minutes/sample.pdf',
             'file_name' => 'board-meeting-mar-2025.pdf',
             'file_size' => 1536000,

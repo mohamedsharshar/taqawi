@@ -10,6 +10,15 @@ use Illuminate\Support\Facades\Storage;
 
 class MeetingMinuteController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:sanctum')->except(['index', 'show']);
+        $this->middleware('permission:view meeting minutes')->only(['index', 'show']);
+        $this->middleware('permission:create meeting minutes')->only('store');
+        $this->middleware('permission:edit meeting minutes')->only('update');
+        $this->middleware('permission:delete meeting minutes')->only('destroy');
+    }
+
     public function index(Request $request): JsonResponse
     {
         $minutes = MeetingMinute::active()

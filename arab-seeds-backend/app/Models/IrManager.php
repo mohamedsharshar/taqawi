@@ -4,14 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use Spatie\Translatable\HasTranslations;
 
 class IrManager extends Model
 {
+    use HasTranslations;
+
+    public $translatable = ['name', 'position'];
+
     protected $fillable = [
-        'name_ar',
-        'name_en',
-        'position_ar',
-        'position_en',
+        'name',
+        'position',
         'phone',
         'email',
         'photo',
@@ -20,6 +23,8 @@ class IrManager extends Model
 
     protected $casts = [
         'is_active' => 'boolean',
+        'name' => 'array',
+        'position' => 'array',
     ];
 
     protected $appends = ['photo_url'];

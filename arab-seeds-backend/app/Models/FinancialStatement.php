@@ -4,14 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use Spatie\Translatable\HasTranslations;
 
 class FinancialStatement extends Model
 {
+    use HasTranslations;
+
+    public $translatable = ['title', 'description'];
+
     protected $fillable = [
-        'title_ar',
-        'title_en',
-        'description_ar',
-        'description_en',
+        'title',
+        'description',
         'file_path',
         'file_name',
         'file_size',
@@ -24,6 +27,8 @@ class FinancialStatement extends Model
     protected $casts = [
         'statement_date' => 'date',
         'is_active' => 'boolean',
+        'title' => 'array',
+        'description' => 'array',
     ];
 
     protected $appends = ['file_url'];

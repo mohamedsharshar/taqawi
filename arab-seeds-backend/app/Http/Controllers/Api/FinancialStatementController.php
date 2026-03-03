@@ -10,6 +10,15 @@ use Illuminate\Support\Facades\Storage;
 
 class FinancialStatementController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth:sanctum')->except(['index', 'show']);
+        $this->middleware('permission:view financial statements')->only(['index', 'show']);
+        $this->middleware('permission:create financial statements')->only('store');
+        $this->middleware('permission:edit financial statements')->only('update');
+        $this->middleware('permission:delete financial statements')->only('destroy');
+    }
+
     public function index(Request $request): JsonResponse
     {
         $statements = FinancialStatement::active()

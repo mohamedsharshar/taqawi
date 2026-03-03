@@ -10,10 +10,8 @@ return new class extends Migration
     {
         Schema::create('meeting_minutes', function (Blueprint $table) {
             $table->id();
-            $table->string('title_ar');
-            $table->string('title_en');
-            $table->text('description_ar')->nullable();
-            $table->text('description_en')->nullable();
+            $table->json('title');
+            $table->json('description')->nullable();
             $table->string('file_path');
             $table->string('file_name');
             $table->integer('file_size');
